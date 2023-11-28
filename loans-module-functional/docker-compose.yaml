@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  database:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: "loans_module"
+      MYSQL_ROOT_PASSWORD: "GdwyTQ6TeD8daCJtHOXsJhqxIyv4ZaG6"
+    ports:
+      - "3306:3306"
